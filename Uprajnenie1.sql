@@ -1,16 +1,16 @@
-﻿--Напишете заявка, коятоизвеждаадресътнастудио ‘MGM’ 
+﻿--Напишете заявка, която извежда адресът на студио 'MGM'.
 
 SELECT ADDRESS
 FROM STUDIO
 WHERE NAME = 'MGM'
 
---Напишетезаявка, коятои звежда рождената дата на актрисата Sandra Bull
+--Напишете заявка, която извежда рождената дата на актрисата 'Sandra Bullock'.
 SELECT BIRTHDATE
 FROM MOVIESTAR
 WHERE NAME = 'Sandra Bullock'
 
 --Напишете заявка, която извежда имената на всички актьори, които са участвали
---във филм през 1980 в заглавието на които има думата ‘Love’ 
+--във филм през 1980 в заглавието на които има думата 'Love'
 
 SELECT STARNAME
 FROM STARSIN
@@ -24,7 +24,7 @@ FROM MOVIEEXEC
 where NETWORTH > 10000000 
 
 --Напишете заявка, която извежда имената на всички актьори, които са мъже или
---живеят в Malibu 
+--живеят в 'Malibu'
 SELECT NAME
 FROM MOVIESTAR
 WHERE GENDER = 'M' OR ADDRESS LIKE '%Malibu%'
